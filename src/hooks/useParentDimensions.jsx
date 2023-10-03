@@ -17,7 +17,7 @@ const useParentDimensions = (ref) => {
     handleResize();
 
     return () => window.removeEventListener("resize", handleResize);
-  }, []);
+  }, [ref]);
 
   return dimensions;
 };
